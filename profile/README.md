@@ -1,14 +1,5 @@
 #Example Code
 ```
-(class Cow (private (string name) (int age))
-  (public
-    (method (Cow (string name) (int age))
-      (= this.name name)
-      (= age this.age age))
-    (method (toString)
-      (printf “Name” << name << “age” << age))))
-
-
 (function main (void)
     (Cow* cow1) ;this is a pointer not an obj
     (Cow* cow2)
@@ -19,4 +10,11 @@
     (delete cow2)
     (= Cow1 nullptr)
     (= Cow2 nullptr))
+(class Cow (private (string name) (int age))
+  (public
+    (method (Cow (string name) (int age))
+      (= this.name name)
+      (= age this.age age))
+    (method (toString)
+      (printf “Name” << name << “age” << age))))
 ```
