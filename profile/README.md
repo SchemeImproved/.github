@@ -6,6 +6,7 @@
 
     (= Cow1 (new Cow cow1 1)) ;this instantiate a cow obj on the heap
     (= Cow2 (new Cow cow2 4))
+    (Cow1 toString)
     (delete cow1)
     (delete cow2)
     (= Cow1 nullptr)
